@@ -36,7 +36,7 @@ class VegetableStore {
             if (quantity > product.quantity) {
                 throw new Error(`The quantity ${quantity} for the vegetable ${type} is not available in the store, your current bill is $${totalPrice.toFixed(2)}.`)
             }
-            let price = product.price  * quantity
+            let price = product.price * quantity
             product.quantity -= quantity;
             totalPrice += price
         }
@@ -62,8 +62,8 @@ class VegetableStore {
         this.availableProducts.sort((a, b) => a.price - b.price)
         this.availableProducts.forEach((v) => resArr.push(`${v.type}-${v.quantity}-$${v.price}`))
         resArr.push(`The owner of the store is ${this.owner}, and the location is ${this.location}.`)
-        
-        return resArr.join('\n')   
+
+        return resArr.join('\n')
     }
 }
 let vegStore = new VegetableStore("Jerrie Munro", "1463 Pette Kyosheta, Sofia");

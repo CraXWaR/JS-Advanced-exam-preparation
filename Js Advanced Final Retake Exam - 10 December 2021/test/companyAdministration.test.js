@@ -1,5 +1,5 @@
-const {expect} = require('chai')
-const {companyAdministration} = require('../companyAdministration')
+const { expect } = require('chai')
+const { companyAdministration } = require('../companyAdministration')
 
 describe("companyAdministration", () => {
     describe("hiringEmployee", () => {
@@ -9,7 +9,7 @@ describe("companyAdministration", () => {
             expect(companyAdministration.hiringEmployee('Alex', 'Programmer', 5)).to.be.equal(`Alex was successfully hired for the position Programmer.`)
             expect(companyAdministration.hiringEmployee('Alex', 'Programmer', 2)).to.be.equal(`Alex is not approved for this position.`)
         });
-     });
+    });
     describe('calculateSalary', () => {
         it('test2', () => {
             expect(companyAdministration.calculateSalary(2)).to.be.equal(30)

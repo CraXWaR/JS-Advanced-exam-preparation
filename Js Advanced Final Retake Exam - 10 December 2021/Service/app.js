@@ -40,7 +40,7 @@ function solve() {
         h3Element.textContent = `Client information: ${clientName}, ${clientPhone}`
         let h4Element = document.createElement('h4')
         h4Element.textContent = `Description of the problem: ${description}`
-        
+
         let startBtn = document.createElement('button')
         startBtn.classList.add('start-btn')
         startBtn.textContent = 'Start Repair'
@@ -62,7 +62,7 @@ function solve() {
     }
     function startEvent(e) {
         e.currentTarget.disabled = true;
-        e.currentTarget.parentNode.querySelector('.finish-btn').disabled = false; 
+        e.currentTarget.parentNode.querySelector('.finish-btn').disabled = false;
     }
     function finishEvent(e) {
         let containerDiv = e.currentTarget.parentNode
