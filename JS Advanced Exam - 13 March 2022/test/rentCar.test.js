@@ -1,5 +1,5 @@
-const {expect} = require('chai')
-const {rentCar} = require('../rentCar')
+const { expect } = require('chai')
+const { rentCar } = require('../rentCar')
 
 describe("rentCar", () => {
     describe("searchCar", () => {

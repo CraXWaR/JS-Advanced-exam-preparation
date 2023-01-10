@@ -7,9 +7,9 @@ class LibraryCollection {
         if (this.books.length >= this.capacity) {
             throw new Error("Not enough space in the collection.")
         }
-        this.books.push({bookName, bookAuthor, payed: false})
+        this.books.push({ bookName, bookAuthor, payed: false })
 
-        return `The ${bookName}, with an author ${bookAuthor}, collect.` 
+        return `The ${bookName}, with an author ${bookAuthor}, collect.`
     }
     payBook(bookName) {
         const findBook = this.books.find(b => b.bookName === bookName);
@@ -43,7 +43,7 @@ class LibraryCollection {
             let sorted = this.books.sort((a, b) => a.bookName.localeCompare(b.bookName))
             let result = []
             let cap = this.capacity - this.books.length
-            result.push(`The book collection has ${ cap } empty spots left.`)
+            result.push(`The book collection has ${cap} empty spots left.`)
             sorted.map((b) => {
                 let paid = b.payed ? 'Has Paid' : 'Not Paid';
                 result.push(`${b.bookName} == ${b.bookAuthor} - ${paid}.`);
@@ -61,7 +61,7 @@ class LibraryCollection {
                 throw new Error(`${bookAuthor} is not in the collection.`)
             }
         }
-    } 
+    }
 }
 const library = new LibraryCollection(5)
 library.addBook('Don Quixote', 'Miguel de Cervantes');

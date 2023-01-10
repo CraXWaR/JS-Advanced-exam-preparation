@@ -20,14 +20,14 @@ class CarDealership {
     sellCar(model, desiredMileage) {
         let soldPrice = 0
         let carIndex = this.availableCars.findIndex(c => c.model == model);
-        if(carIndex == -1){
+        if (carIndex == -1) {
             throw Error(`${model} was not found!`);
-        } 
-        if(this.availableCars[carIndex].mileage > desiredMileage){
+        }
+        if (this.availableCars[carIndex].mileage > desiredMileage) {
             let diff = this.availableCars[carIndex].mileage - desiredMileage
-            if (diff <= 40000){
+            if (diff <= 40000) {
                 soldPrice = this.availableCars[carIndex].price - (this.availableCars[carIndex].price * 0.05);
-            } else if (diff > 40000){
+            } else if (diff > 40000) {
                 soldPrice = this.availableCars[carIndex].price - (this.availableCars[carIndex].price * 0.10);
             }
         } else {
@@ -42,7 +42,7 @@ class CarDealership {
         );
         this.totalIncome += soldPrice;
         this.availableCars.slice(carIndex, 1);
- 
+
         return `${model} was sold for ${soldPrice.toFixed(2)}$`;
     }
     currentCar() {

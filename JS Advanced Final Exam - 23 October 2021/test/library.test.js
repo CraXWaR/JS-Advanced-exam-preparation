@@ -1,5 +1,5 @@
-const {expect} = require('chai')
-const {library} = require('../library')
+const { expect } = require('chai')
+const { library } = require('../library')
 
 describe("library …", () => {
     describe("calcPriceOfBook", () => {

@@ -87,7 +87,7 @@ const summerCamp = new SummerCamp("Jane Austen", "Pancharevo Sofia 1137, Bulgari
 console.log(summerCamp.registerParticipant("Petar Petarson", "student", 300));
 console.log(summerCamp.timeToPlay("Battleship", "Petar Petarson"));
 console.log(summerCamp.registerParticipant("Sara Dickinson", "child", 200));
-console.log(summerCamp.timeToPlay("WaterBalloonFights", "Petar Petarson", "Sara Dickinson"));
+console.log(summerCamp.timeToPlay("WaterBalloonFights", "Petar Petarson", "Sara Dickinson"));
 console.log(summerCamp.registerParticipant("Dimitur Kostov", "student", 300));
 console.log(summerCamp.timeToPlay("WaterBalloonFights", "Petar Petarson", "Dimitur Kostov"));
 

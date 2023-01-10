@@ -17,12 +17,12 @@ function solve() {
     }
     let totalLikesText = 0
     btns.btnAdd.addEventListener('click', onAddSong)
-    
+
     function onAddSong(e) {
         console.log(sections.allHits);
         e.preventDefault()
         if (input.genre.value == "" || input.name.value == "" || input.author.value == "" || input.date.value == "") {
-            return ;
+            return;
         }
         let divContainer = document.createElement("div")
 
@@ -65,7 +65,7 @@ function solve() {
         divContainer.appendChild(btnSave)
         divContainer.appendChild(btnLlike)
         divContainer.appendChild(btnDelete)
-        
+
         sections.allHits[0].appendChild(divContainer)
 
         input.genre.value = ""
@@ -77,7 +77,7 @@ function solve() {
             btnSave.remove()
             btnLlike.remove()
         }
-    
+
         function onLikeSong(e) {
             totalLikesText++
             sections.totalLikes.textContent = `Total Likes: ${totalLikesText}`

@@ -1,5 +1,5 @@
-const {expect} = require('chai')
-const {flowerShop} = require('../flowerShop')
+const { expect } = require('chai')
+const { flowerShop } = require('../flowerShop')
 
 describe("flowerShop", () => {
     describe("calcPriceOfFlowers", () => {
