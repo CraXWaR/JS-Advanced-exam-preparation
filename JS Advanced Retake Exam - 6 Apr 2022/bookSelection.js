@@ -34,4 +34,4 @@ const bookSelection = {
   },
 };
 
-module.exports = {bookSelection}
+module.exports = { bookSelection }

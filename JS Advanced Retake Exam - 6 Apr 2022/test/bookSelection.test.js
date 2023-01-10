@@ -1,5 +1,5 @@
-const {expect} = require('chai')
-const {bookSelection} = require('../bookSelection')
+const { expect } = require('chai')
+const { bookSelection } = require('../bookSelection')
 
 describe("Tests …", () => {
     describe("isGenreSuitable", () => {
@@ -17,7 +17,7 @@ describe("Tests …", () => {
             expect(bookSelection.isGenreSuitable('Thriller', 12)).to.be.equal('Books with Thriller genre are not suitable for kids at 12 age')
             expect(bookSelection.isGenreSuitable('Horror', 12)).to.be.equal('Books with Horror genre are not suitable for kids at 12 age')
         })
-     });
+    });
     describe("isItAffordable", () => {
         it("can buy", () => {
             expect(bookSelection.isItAffordable(10, 10)).to.be.equal('Book bought. You have 0$ left')
@@ -31,7 +31,7 @@ describe("Tests …", () => {
             expect(() => bookSelection.isItAffordable(1, '1')).to.throw()
             expect(() => bookSelection.isItAffordable('1', '1')).to.throw()
         })
-     });
+    });
     describe("suitableTitles", () => {
         it("correct title", () => {
             expect(bookSelection.suitableTitles([{
@@ -48,6 +48,6 @@ describe("Tests …", () => {
                 title: 'aa',
                 genre: 'a'
             }], 1)).to.throw()
-         });
-     });
+        });
+    });
 });
